@@ -13,7 +13,15 @@
 # >>> [x for x in myrange_list(1,10)]
 # [(1, 9), (2, 8), (3, 7), (4, 6), (5, 5), (6, 4), (7, 3), (8, 2), (9, 1)]
 
-def myrange_list(start,end):
+# def myrange_list(start,end):
+
 
 def myrange_gen(start, end):
+    for i in range(start, end):
+        a = i
+        b = end-i
+        return a, b
 
+
+res = [x for x in myrange_gen(1, 10)]
+print res
